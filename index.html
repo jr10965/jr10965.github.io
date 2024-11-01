@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="zxx">    
+    <head>        
+        <!--Metadatos-->
+        <meta charset="UTF-8">
+        <meta name="author" content="Rodriguez R">
+        <meta name="description" content="Página Web de Muestra Primer Parcial">
+        <meta name="keywords" content="HTML, CSS, JavaScript, React"> <!--palabras claves para facilitar la busqueda-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--para decir hacer la pagina responsive y se ajuste al tamaño del dispositivo-->
+        <!--Titulo de la pagia-->
+        <title>Pagina HTML - Programacion Web I</title>
+        <!--Icono favorito-->
+        <link rel="icon" type="image/x-icon" href="images/pngHTML.png"> <!--archivo .png 48px x 48px-->
+        <!--BootStrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+         <!--BootStrap-->
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+         <!--Iconos de Bootstrap-->
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <!--CSS-->
+        <link href="style.css" rel="stylesheet"> 
+
+        <!--Letras de Google-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+ 
+      </head>
+    <body>
+        
+      <!--Barra de navegacion-->
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbar-toggler">
+                <a class="navbar-brand" href="#">
+                <img src="images/pngHTML.png" width="50" alt="Logo de Nuestra Pagina">
+                </a>
+                <ul class="navbar-nav d-flex justify-content-center align-items-center">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#sobre-nosotros">Sobre Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#proyectos-recientes">Proyectos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#testimonios">Testimonios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        <!--Seccion principal - Hero Section-->
+        <section class="hero align-items-strech">
+            <div class="hero-principal d-flex flex-column justify-content-center align-items-center">  
+                <!--cuando se agregan tantas clases en un elemento lo hace mas dificil de identificar lo que tiene asignado, lo mejor es ponerlo en css si son muchas-->
+                <img class ="hero-imagen-central" src="images/imagen.png" alt="Imagen del Sitio">
+                <h1>Hola, Bienvenidos!</h1>
+                <h2>Esta es Nuestra Página de Programación Web y aquí podrás ver los elementos básicos de una página web. </h2>
+            </div>
+            <div class="hero-inferior">
+              <img class="hero-inferior-imagen img-fluid" src="images/Monitor.avif" alt="Monitoor, laptop y logos de HTML, CSS, JavaScript"> 
+            </div>
+        </section>
+
+        <!--Seccion sobre nosotros-->
+        <section id="sobre-nosotros" class="sobre-nosotros seccion-oscura">
+          <div class="contenedor">
+            <h2 class="seccion-titulo">Conoce más sobre nosotros</h2>
+            <p class="seccion-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ut qui distinctio, sed error veritatis tempore, quasi quisquam molestias eius, excepturi debitis! Perspiciatis sint incidunt culpa, aperiam eos voluptate quidem sequi pariatur ducimus repudiandae aut porro accusamus nesciunt, voluptatum possimus minus odit? Possimus molestiae quo vel vero tenetur obcaecati recusandae aut? Perspiciatis rerum sed accusantium cumque odit corrupti quas facere soluta, architecto recusandae explicabo esse, saepe atque aspernatur maxime at in! Suscipit eius maiores eaque. </p>
+          </div>
+        </section>
+
+         <!--Seccion Experiencia-->
+          <section class="experiencia seccion-clara">
+            <div class="container text-center">
+              <div class="row">
+                <!-- Desarrollo web-->
+                <div class="columna col-12 col-md-4">
+                  <i class="bi bi-laptop"></i>
+                  <p class="experiencia-titulo">Desarrollo Web</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ad quia dolorem tempore pariatur alias fugiat minima exercitationem placeat atque!</p>
+                  <div class="badges-contenedor">
+                    <span class="badge text-bg-primary">HTML</span>
+                    <span class="badge text-bg-primary">CSS</span>                  
+                    <span class="badge text-bg-primary">JavaScript</span>
+                    <span class="badge text-bg-primary">Phyton</span>
+                  </div>
+                </div>
+                <!-- Articulos-->
+                <div class="columna col-12 col-md-4">
+                  <i class="bi bi-book"></i>
+                  <p class="experiencia-titulo">Artículos</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ad quia dolorem tempore pariatur alias fugiat minima exercitationem placeat atque!</p>
+                  <div class="badges-contenedor">
+                    <span class="badge text-bg-primary">Escribir</span>
+                    <span class="badge text-bg-primary">Editar</span>                  
+                    <span class="badge text-bg-primary">Blogs</span>
+                  </div>
+                </div>
+                <!-- Estudiante-->
+                <div class="columna col-12 col-md-4">
+                  <i class="bi bi-backpack"></i>
+                  <p class="experiencia-titulo">Estudiante</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ad quia dolorem tempore pariatur alias fugiat minima exercitationem placeat atque!</p>
+                  <div class="badges-contenedor">
+                    <span class="badge text-bg-primary">Desarrollo web</span>
+                    <span class="badge text-bg-primary">Python</span>                  
+                    <span class="badge text-bg-primary">JavaScript</span>
+                  </div>
+                </div>
+              </div>
+            </div>   
+          </section>
+         <!--Seccion Proyectos Recientes-->
+         <section id="proyectos-recientes" class="proyectos-recientes seccion-clara d-flex flex-column">
+          <h2 class="seccion-titulo texto-negro">Proyectos recientes</h2>
+          <h3 class="seccion-descripcion">Estos son algunos de los proyectos que hemos realizdo!</h3>
+          <!--Galeria de proyectos-->
+          <div class="container text-center proyectos-contenedor">
+            <div class="row">
+              <!--Proyecto 1-->
+              <div class="col-12  col-md-6 col-lg-4"> 
+                <div class="proyecto">
+                  <img src="images/Proyecto1.png" alt="Proyectos Web">
+                  <div class="overlay">
+                    <p>Web 1</p>
+                    <div class="iconos-contenedor"> 
+                      <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-github"></i>
+                      </a>           
+                      <a href="https://unphu.edu.do/" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-laptop"></i>
+                      </a>           
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Proyecto 2-->
+              <div class="col-12  col-md-6 col-lg-4"> 
+                <div class="proyecto">
+                  <img src="images/Proyecto2.png" alt="Proyectos Web">
+                  <div class="overlay">
+                    <p>Web 2</p>
+                    <div class="iconos-contenedor"> 
+                      <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-github"></i>
+                      </a>           
+                      <a href="https://unphu.edu.do/" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-laptop"></i>
+                      </a>           
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Proyecto 3-->
+              <div class="col-12  col-md-6 col-lg-4"> 
+                <div class="proyecto">
+                  <img src="images/Proyecto3.jpg" alt="Proyectos Web">
+                  <div class="overlay">
+                    <p>Web 3</p>
+                    <div class="iconos-contenedor"> 
+                      <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-github"></i>
+                      </a>           
+                      <a href="https://unphu.edu.do/" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-laptop"></i>
+                      </a>           
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Proyecto 4-->
+              <div class="col-12  col-md-6 col-lg-4"> 
+                <div class="proyecto">
+                  <img src="images/Proyecto4.jpg" alt="Proyectos Web">
+                  <div class="overlay">
+                    <p>Web 4</p>
+                    <div class="iconos-contenedor"> 
+                      <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-github"></i>
+                      </a>           
+                      <a href="https://unphu.edu.do/" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-laptop"></i>
+                      </a>           
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Proyecto 5-->
+              <div class="col-12  col-md-6 col-lg-4"> 
+                <div class="proyecto">
+                  <img src="images/Proyecto5.png" alt="Proyectos Web">
+                  <div class="overlay">
+                    <p>Web 5</p>
+                    <div class="iconos-contenedor"> 
+                      <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-github"></i>
+                      </a>           
+                      <a href="https://unphu.edu.do/" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-laptop"></i>
+                      </a>           
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Proyecto 6-->
+              <div class="col-12  col-md-6 col-lg-4"> 
+                <div class="proyecto">
+                  <img src="images/Proyecto6.png" alt="Proyectos Web">
+                  <div class="overlay">
+                    <p>Web 6</p>
+                    <div class="iconos-contenedor"> 
+                      <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-github"></i>
+                      </a>           
+                      <a href="https://unphu.edu.do/" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-laptop"></i>
+                      </a>           
+                    </div>
+                  </div>
+                </div>
+              </div>              
+            </div>
+          </section>
+         <!--Más proyectos-->
+         <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+           <button type="button" class="btn btn-info">
+            Ver más proyectos
+            <i class="bi bi-arrow-right-circle-fill"></i>
+          </button>
+        </a>
+        </div>
+
+        <!--Seccion Articulos-->
+        <section class="articulos justify-content-start">
+          <h2 class="seccion-titulo texto-negro">Informacion</h2>
+          <div class="card">
+            <div class="card-header">
+              Más recientes
+            </div>
+            <ul class="list-group list-group-flush">
+              <a href="https://unphu.edu.do/acerca-de-la-unphu/informaciones-al-consumidor/" target="_blank" rel="noopener noreferrer">
+                <li class="list-group-item">Informacion Unphu</li>
+              </a>
+              <a href="https://admisiones.unphu.edu.do/oferta-academica/" target="_blank" rel="noopener noreferrer">
+                <li class="list-group-item">Oferta Académica</li>
+              </a>
+              <a href="https://admisiones.unphu.edu.do/preguntas-frecuentes/" target="_blank" rel="noopener noreferrer">
+                <li class="list-group-item">Preguntas Frecuentes</li>
+              </a>
+              <a href="https://admisiones.unphu.edu.do/calendario-academico-2023-2/" target="_blank" rel="noopener noreferrer">
+                <li class="list-group-item">Calendario Académico</li>
+              </a>
+              <a href="https://admisiones.unphu.edu.do/becas/" target="_blank" rel="noopener noreferrer">
+                <li class="list-group-item">Becas</li>
+              </a>
+              <a href="https://admisiones.unphu.edu.do/contacto/" target="_blank" rel="noopener noreferrer">
+                <li class="list-group-item">Contacto</li>
+              </a>
+            </ul>
+          </div>
+          <a href="https://admisiones.unphu.edu.do/" target="_blank" rel="noopener noreferrer">
+            <button type="button" class="btn btn-info">
+              Ver más información
+             <i class="bi bi-arrow-right-circle-fill"></i>
+           </button>
+         </a>
+        </section>
+
+        <!--Testimonios-->
+        <section id="testimonios" class="testimonios seccion-clara">
+          <h2 class="seccion-titulo">Testimonios</h2>
+          <h3 class="seccion-descripcion">Estos son algunos testimonios de mis compañeros!</h3>
+
+          <!--Carrusel-->
+          <div id="testimonios-carrusel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="container">
+                  <img class="testimonio-imagen rounded-circle" src="images/Proyecto6.png" alt="Programacion Web I...">
+                  <p class="testimonio-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero aut obcaecati voluptatum ipsam recusandae maiores deleniti rem esse harum, sunt alias illum necessitatibus unde velit, animi expedita quidem excepturi dolore!</p>
+                  <div class="testimonio-info">
+                    <p class="cliente">Juancito</p>
+                    <p class="cargo">Desarrollador Web</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="container">
+                  <img class="testimonio-imagen rounded-circle" src="images/Proyecto4.jpg" alt="Programacion Web II">
+                  <p class="testimonio-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero aut obcaecati voluptatum ipsam recusandae maiores deleniti rem esse harum, sunt alias illum necessitatibus unde velit, animi expedita quidem excepturi dolore!</p>
+                  <div class="testimonio-info">
+                    <p class="cliente">Patricio</p>
+                    <p class="cargo">Diseñador Web</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="container">
+                  <img class="testimonio-imagen rounded-circle" src="images/Proyecto2.png" alt="Programacion Web III">
+                  <p class="testimonio-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero aut obcaecati voluptatum ipsam recusandae maiores deleniti rem esse harum, sunt alias illum necessitatibus unde velit, animi expedita quidem excepturi dolore!</p>
+                  <div class="testimonio-info">
+                    <p class="cliente">Lorenzo</p>
+                    <p class="cargo">Desarrollador Full-Stack</p>
+                  </div>
+                </div>
+             </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+          </div>
+        </section>
+
+        <!--Contactos-->
+        <section id="contacto" class="contacto seccion-oscura">
+          <div class="container">
+            <div class="container text-center rectangulo d-flex justify-content-evenly">
+              <div class="row">
+                <div class="col-12 col-md-4 seccion-titulo">
+                  Contáctanos!!
+                </div>
+                <div class="col-12 col-md-4 descripcion">
+                  Contáctanos para iniciar tu proyecto web y lo haremos realidad!
+                </div>
+                <div class="col-12 col-md-4">
+                  <a href="mailto:contactos@unphu.edu.do">
+                    <button type="button">
+                      Contacto
+                      <i class="bi bi-envelope-check-fill"></i>
+                    </button>
+
+                  </a>
+                </div>
+              </div>
+            </div> 
+          </div>
+        </section>
+
+        <!--Pie de Página-->
+        <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
+          <i class="bi bi-send-arrow-up"></i>
+          <p class="footer-texto text-center">
+            A programar se aprende programando!<br>Todo depende de ti!
+          </p>
+          <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+            <a href="https://twitter.com/?lang=es" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-twitter-x"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://do.linkedin.com/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-github"></i>
+            </a>
+            <a href="mailto:contactos@unphu.edu.do" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-envelope"></i>
+            </a>
+            </div>
+            <div class="derechos-de-autor">Created by JRodriguez (2024) &#169; </div>
+        </footer>
+
+         <!--JS-->
+        <!--los archivos para enlazar JS deben colocarse al final de la etiqueta body -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+</html>
